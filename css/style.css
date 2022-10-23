@@ -337,3 +337,14 @@ article{
     list-style-type: none;
     display: inline-block;
 }
+
+.img-right{
+    float: right;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.img-left{
+    width: 120px;
+    border-radius: 50%;
+}
