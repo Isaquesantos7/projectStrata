@@ -83,7 +83,7 @@ li{
     padding-left: .5em;
 }
 
-input, label, textarea{
+input, label, textarea, select{
     display: inline-block;
     width: 100%;
     box-sizing: border-box;
@@ -101,6 +101,15 @@ input, textarea{
 input:focus, textarea:focus{
     border: 3px solid #49bf9d;
     outline: none;
+}
+
+/*Pegando pelo type*/
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
+
+article{
+    display: inline-block;
 }
 
 .ul-alternate{
@@ -128,6 +137,10 @@ input:focus, textarea:focus{
     color: #49bf9d;
 }
 
+.imagem-link{
+    border: 0;
+}
+
 .button-default{
     background-color: #49bf9d;
     border: 2px solid #49bf9d;
@@ -137,12 +150,26 @@ input:focus, textarea:focus{
     font-size: .8em;
     display: inline-block;
     width: auto;
+    transition: all .2s;
+    cursor: pointer;
+}
+
+.button-default:hover{
+    background-color: #50e6bb;
+    border-color: transparent;
 }
 
 .button-default-stroke{
     background-color: white;
     border-color: #efefef;
     color: inherit;
+}
+
+.button-default-stroke:hover{
+    color: #49bf9d;
+    border-color: #49bf9d;
+    background-color: white;
+
 }
 
 .button-default-small{
@@ -154,7 +181,13 @@ input:focus, textarea:focus{
     box-sizing: border-box;
     text-align: center;
     width: 100%;
+    margin-top: 3px;
 }
+
+.button-default-big{
+    padding: 1rem;
+}
+
 
 .table{
     width: 100%;
@@ -234,8 +267,16 @@ input:focus, textarea:focus{
     box-sizing: border-box;
 }
 
-/*Grid*/
+.recent-works-cards img{
+    border-radius: 10px;
+}
 
+.main-header-link img{
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 250px;
+}
+/*Grid*/
 .row{
     overflow: auto;
 }
@@ -261,4 +302,38 @@ input:focus, textarea:focus{
     margin-left: 3%;
     width: 32%;
     float: left;
+}
+
+.gallery-img img{
+    width: 100%;
+}
+
+.gallery-thumb img{
+    width: 241px;
+    margin: 0  2% 2% 0;
+    border: 3px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.main-footer{
+    position: fixed;
+    bottom: 0;
+    width: 35%;
+    left: 0;
+    width: 35%;
+    padding: 0 54px 72px;
+    box-sizing: border-box;
+    text-align: right;
+}
+
+.l-icons  li{
+    list-style-type: none;
+    display: inline-block;
+
+}
+
+.copyrigth li{
+    list-style-type: none;
+    display: inline-block;
 }
